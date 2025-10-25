@@ -1,3 +1,4 @@
+
 from crewai import Agent
 import re
 import streamlit as st
@@ -15,6 +16,7 @@ class TripAgents():
         else:
             self.llm = llm
 
+        # Initialize tools once
         self.search_tool = SearchTools()
         self.browser_tool = BrowserTools()
         self.calculator_tool = CalculatorTools()
@@ -55,7 +57,11 @@ class TripAgents():
             verbose=True
         )
 
-
+###########################################################################################
+# Print agent process to Streamlit app container                                          #
+# This portion of the code is adapted from @AbubakrChan; thank you!                       #
+# https://github.com/AbubakrChan/crewai-UI-business-product-launch/blob/main/main.py#L210 #
+###########################################################################################
 class StreamToExpander:
     def __init__(self, expander):
         self.expander = expander
