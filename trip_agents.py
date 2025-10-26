@@ -7,6 +7,10 @@ from crewai import LLM
 from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class TripAgents():
     def __init__(self, llm: BaseChatModel = None):
