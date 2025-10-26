@@ -24,7 +24,7 @@ class TripAgents():
     def city_selection_agent(self):
         return Agent(
             role='City Selection Expert',
-            goal='Select the best city based on weather, season, and prices',
+            goal='Select the best city based on weather, season, and price',
             backstory='An expert in analyzing travel data to pick ideal destinations',
             tools=[self.search_tool, self.browser_tool],
             allow_delegation=False,

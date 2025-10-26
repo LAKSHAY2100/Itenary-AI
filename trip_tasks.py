@@ -35,7 +35,7 @@ class TripTasks():
 
     def gather_task(self, agent, origin, interests, range):
         return Task(description=dedent(f"""
-            As a local expert on this city you must compile an
+            As a local expert on this city you must compile a
             in-depth guide for someone traveling there and wanting
             to have THE BEST trip ever!
             Gather information about  key attractions, local customs,
