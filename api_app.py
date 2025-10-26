@@ -126,10 +126,10 @@ class TripCrew:
             result = crew.kickoff()
             # Convert CrewOutput to string and ensure it's properly formatted
             return result.raw if hasattr(result, 'raw') else str(result)
-        except Exception as e:
+        except Exception as x:
             raise HTTPException(
                 status_code=500,
-                detail=str(e)
+                detail=str(x)
             )
 
 @app.get("/")
