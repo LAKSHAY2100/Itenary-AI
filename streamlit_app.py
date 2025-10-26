@@ -5,7 +5,8 @@ import streamlit as st
 import datetime
 import sys
 from langchain_openai import OpenAI
-
+from dotenv import load_dotenv
+load_dotenv()
 
 st.set_page_config(page_icon="✈️", layout="wide")
 
