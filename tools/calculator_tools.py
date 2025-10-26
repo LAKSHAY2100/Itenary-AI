@@ -7,7 +7,7 @@ class CalculationInput(BaseModel):
 class CalculatorTools(BaseTool):
     name: str = "Make a calculation"
     description: str = """Useful to perform any mathematical calculations, 
-    like sum, minus, multiplication, division, etc.
+    like sum, minus, multiplication, divisions, etc.
     The input should be a mathematical expression, e.g. '200*7' or '5000/2*10'"""
     args_schema: type[BaseModel] = CalculationInput
 
