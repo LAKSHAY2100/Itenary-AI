@@ -1,6 +1,4 @@
-![CrewAI](https://miro.medium.com/v2/resize:fit:1400/0*-7HC-GJCxjn-Dm7i.png)
-
-# 🏖️ Trip Planner: Streamlit with CrewAI
+# 🏖️ Trip Planner
 
 ![Streamlit App](images/trip_planner.jpg)
 
@@ -39,24 +37,6 @@ To experience the VacAIgent app:
   - `./tools directory`: Houses tool classes used by agents.
   - `./streamlit_app.py`: The heart of the Streamlit app.
 
-## Using LLM Models
-
-To switch LLMs from differnet Providers
-
-```python
-class TripAgents():
-    def __init__(self, llm: BaseChatModel = None):
-        if llm is None:
-            #self.llm = LLM(model="groq/deepseek-r1-distill-llama-70b")
-            self.llm = LLM(model="gemini/gemini-2.5-flash")
-        else:
-            self.llm = llm
-
-```
-[Connect to LLMs](https://docs.crewai.com/how-to/llm-connections#connect-crewai-to-llms)
-
-
-
 ### Integrating Ollama with CrewAI
 
 Pass the Ollama model to agents in the CrewAI framework:
@@ -70,7 +50,3 @@ Pass the Ollama model to agents in the CrewAI framework:
     )
 ```
 
-
-## License
-
-Trip Planner is open-sourced under the MIT License.
