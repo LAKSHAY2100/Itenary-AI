@@ -1,3 +1,6 @@
+# CLI TO RUN cli_app.py :
+# python cli_app.py -o "Bangalore, India" -d "Krabi, Thailand" -s 2024-05-01 -e 2024-05-10 -i "2 adults who love swimming, dancing, hiking, shopping, food, water sports adventures, rock climbing"
+
 from crewai import Crew, LLM
 from trip_agents import TripAgents
 from trip_tasks import TripTasks
